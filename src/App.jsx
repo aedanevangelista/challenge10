@@ -20,9 +20,9 @@ function App() {
   return (
     <>
       <main className="flex md:flex-col justify-center items-center min-h-screen bg-gradient-to-b from-[#ad68e9] to-[#6860e4] font-kumbh">
-        <div className="flex w-full px-10 mx-2 pb-8 md:px-0 md:pb-0 md:flex-row justify-between md:w-[800px] rounded-3xl bg-white ">
+        <div className="flex w-full px-8 mx-2 pb-8 md:px-0 md:pb-0 md:flex-row justify-between md:w-[800px] rounded-3xl bg-white ">
           <div className="flex flex-col md:flex-row items-center w-full md:h-auto">
-            <aside className="flex w-1/2  md:left-[-4rem] md:top-[1rem] relative  flex-col justify-center ">
+            <aside className="flex w-1/2 h-full md:left-[-4rem] md:top-[1rem] relative  flex-col justify-center ">
               <img src={bg} alt="bg" className="absolute w-[100%] z-10" />
               <img
                 src={womanDesktop}
@@ -36,7 +36,7 @@ function App() {
               />
             </aside>
             <aside className=" md:w-1/2 md:my-[2rem] md:mr-[6rem] flex flex-col">
-              <h1 className="font-[1000] text-3xl pt-16 md:pb-8 self-center md:self-start ">
+              <h1 className="font-[1000] text-3xl pt-16 md:pt-2 md:pb-8 self-center md:self-start ">
                 FAQ
               </h1>
 

@@ -20,27 +20,25 @@ function App() {
   return (
     <>
       <main className="flex md:flex-col justify-center items-center min-h-screen bg-gradient-to-b from-[#ad68e9] to-[#6860e4] font-kumbh">
-        <div className="flex md:flex-row justify-between mx-8 md:w-1/2 rounded-3xl  bg-white ">
-          <div className="flex flex-col md:flex-row w-full md:h-[30rem]">
-            <img
-              src={box}
-              alt="desktopBackground"
-              className="absolute z-20 -translate-x-24 translate-y-48"
-            />
-            <aside className="flex flex-col justify-center md:w-1/2 md:overflow-hidden md:relative z-10 ">
-              <img
-                src={bg}
-                alt="bg"
-                className="md:absolute top-0 md:translate-x-[-5rem] md:translate-y-[2rem]"
-              />
+        <div className="flex w-full px-10 mx-2 pb-8 md:px-0 md:pb-0 md:flex-row justify-between md:w-[800px] rounded-3xl bg-white ">
+          <div className="flex flex-col md:flex-row items-center w-full md:h-auto">
+            <aside className="flex w-1/2  md:left-[-4rem] md:top-[1rem] relative  flex-col justify-center ">
+              <img src={bg} alt="bg" className="absolute w-[100%] z-10" />
               <img
                 src={womanDesktop}
                 alt="womanDesktop"
-                className="md:-translate-x-20 md:absolute"
+                className="absolute w-[100%] z-10"
+              />
+              <img
+                src={box}
+                alt="desktopBackground"
+                className="absolute w-[40%] z-10"
               />
             </aside>
-            <aside className=" px-10 md:w-1/2 md:py-2 md:pl-12 md:pr-20 flex flex-col">
-              <h1 className="font-[1000] text-3xl py-8 self-center ">FAQ</h1>
+            <aside className=" md:w-1/2 md:my-[2rem] md:mr-[6rem] flex flex-col">
+              <h1 className="font-[1000] text-3xl pt-16 md:pb-8 self-center md:self-start ">
+                FAQ
+              </h1>
 
               {data.map((item, i) => (
                 <div className="flex flex-col py-2 border-b">
